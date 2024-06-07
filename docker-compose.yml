@@ -11,4 +11,4 @@ services:
       - DEBUG=1
       - SECRET_KEY="django-insecure-f38h02qee!)up0wrz9bk8939su=*5vtew=inzw5!(i5ugn_24%"
       - DJANGO_SETTINGS_MODULE=auth_service.settings
-    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    command: sh -c "mkdir -p /usr/src/app/db &&python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
